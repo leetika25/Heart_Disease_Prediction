@@ -11,8 +11,19 @@ The model learns patterns from historical healthcare datasets and predicts the r
 
 # 🌐 Live Web Application
 
-🔗 **Live Demo:**
-https://heart-disease-prediction.streamlit.app
+⚠️ This application runs locally using **Streamlit**.
+
+Run the following command in the project directory:
+
+```bash
+streamlit run app.py
+```
+
+After running the command, open this link in your browser:
+
+```
+http://localhost:8501/#heart-disease-prediction-system
+```
 
 ---
 
@@ -20,7 +31,34 @@ https://heart-disease-prediction.streamlit.app
 
 Watch the working demo of the Heart Disease Prediction Web App.
 
-<video src="demo_video.mp4" controls width="700"></video>
+<video src="demo_video.mp4" controls width="750"></video>
+
+---
+
+# 📂 Project Structure
+
+```text
+Heart-Disease-Prediction/
+│
+├── app.py
+│   └── Streamlit web application for heart disease prediction
+│
+├── heart.csv
+│   └── Dataset used for training the machine learning model
+│
+├── Heart_disease_prediction.ipynb
+│   └── Jupyter Notebook containing data analysis, preprocessing,
+│       model training, and evaluation
+│
+├── requirements.txt
+│   └── List of Python libraries required to run the project
+│
+├── demo_video.mp4
+│   └── Screen recording demonstrating how the web app works
+│
+└── README.md
+    └── Project documentation and usage instructions
+```
 
 ---
 
@@ -119,21 +157,6 @@ Important insights from the project:
 * High blood pressure and abnormal heart rate are strong indicators.
 * Machine learning models can detect useful patterns in medical data.
 * Early prediction can support better healthcare decision-making.
-
----
-
-# 📂 Project Structure
-
-```text
-Heart-Disease-Prediction/
-│
-├── app.py                           # Streamlit web application
-├── heart.csv                        # Dataset
-├── requirements.txt                 # Required Python libraries
-├── Heart_disease_prediction.ipynb   # Machine Learning notebook
-├── demo_video.mp4                   # Project demo video
-└── README.md                        # Project documentation
-```
 
 ---
 
