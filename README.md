@@ -1,127 +1,156 @@
-## 📌 Project Statement
+# 🎓 Student Performance Prediction System
 
-Heart disease is one of the most common and dangerous health problems worldwide.
-The goal of this project is to develop a **Machine Learning based Heart Disease Prediction System** that predicts whether a patient is likely to have heart disease based on medical data.
-The model learns patterns from historical healthcare datasets and predicts the risk of heart disease for new patient data.
+A Machine Learning web application that predicts a student's **Final Exam Grade (G3)** based on study habits and previous academic performance.
+
+This project demonstrates the complete **Machine Learning lifecycle** including data preprocessing, model training, evaluation, and deployment using **Streamlit**.
 
 ---
 
-## 📥 Input Features
+# 🚀 Live Web Application
 
-The model uses the following patient medical attributes as input:
+🔗 **Live Demo:**  
+https://Heart-Disease-Prediction/spp.streamlit.app/
 
-| Feature  | Description                          |
-| -------- | ------------------------------------ |
-| age      | Patient's age                        |
-| sex      | Gender (male/female)                 |
-| cp       | Chest pain type                      |
-| trestbps | Resting blood pressure               |
-| chol     | Serum cholesterol level              |
-| fbs      | Fasting blood sugar                  |
-| restecg  | Resting electrocardiographic results |
-| thalach  | Maximum heart rate achieved          |
-| exang    | Exercise induced angina              |
-| oldpeak  | ST depression induced by exercise    |
+---
 
-### Example Input
+# 🎥 Demo Video
 
-```text
-Age: 52
-Sex: Male
-Chest Pain Type: 2
-Cholesterol: 230
-Max Heart Rate: 150
+Watch the working demo of the project below:
+
+https://github.com/user-attachments/assets/7e8a214b-c123-466e-be51-502211ea720d
+
+---
+
+# 📌 Project Overview
+
+Educational institutions often want to identify students who may struggle academically.  
+This project predicts the **final student grade (G3)** using key academic indicators such as:
+
+- Study Time
+- Number of Absences
+- First Period Grade (G1)
+- Second Period Grade (G2)
+
+The Machine Learning model learns patterns from historical student data and predicts the expected final exam score.
+
+---
+
+# 📊 Input Features
+
+| Feature | Description |
+|-------|-------------|
+| Study Time | Weekly study time (scale 1–4) |
+| Absences | Total number of school absences |
+| G1 | First period grade |
+| G2 | Second period grade |
+
+---
+
+# 🎯 Target Variable
+
+| Variable | Description |
+|--------|-------------|
+| G3 | Final Exam Grade |
+
+---
+
+# 🧠 Machine Learning Workflow
+
+1️⃣ Data Collection  
+2️⃣ Data Cleaning & Preprocessing  
+3️⃣ Exploratory Data Analysis (EDA)  
+4️⃣ Feature Selection  
+5️⃣ Model Training  
+6️⃣ Model Evaluation  
+7️⃣ Model Deployment using Streamlit  
+
+---
+
+# 🛠 Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Streamlit
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
+
+---
+
+# 📂 Project Structure
+
 ```
-
----
-
-## 📤 Output
-
-The model performs **binary classification**.
-
-| Output | Meaning                |
-| ------ | ---------------------- |
-| 0      | No Heart Disease       |
-| 1      | Heart Disease Detected |
-
-### Example Output
-
-```text
-Prediction: Heart Disease
-```
-
----
-
-## 🛠 Technologies Used
-
-The following technologies are used in this project:
-
-* Python
-* Pandas
-* NumPy
-* Scikit-learn
-* Matplotlib
-* Seaborn
-* Jupyter Notebook
-
----
-
-## 🤖 Machine Learning Models Used
-
-The following classification algorithms are used:
-
-* **Logistic Regression**
-* **Decision Tree Classifier**
-* **Random Forest Classifier**
-
-These models learn the relationship between patient health attributes and heart disease risk.
-
----
-
-## 📊 Model Evaluation
-
-Model performance is evaluated using the following metrics:
-
-* **Accuracy Score**
-* **Confusion Matrix**
-* **Precision**
-* **Recall**
-* **Classification Report**
-
-These metrics help determine how accurately the model detects heart disease cases.
-
----
-
-## 🔍 Key Insights
-
-Important insights from the project:
-
-* Age and cholesterol levels significantly influence heart disease risk.
-* High blood pressure and abnormal heart rate are strong indicators.
-* Machine learning models can detect useful patterns in medical data.
-* Early prediction can support better healthcare decision-making.
-
----
-
-## 📂 Project Structure
-
-```text
-Heart-Disease-Prediction
+Student-Performance-Prediction
 │
-├── Heart_disease_prediction.ipynb   # Machine Learning notebook
-├── heart.xls                        # Dataset
-├── requirements.txt                 # Required libraries
-└── README.md                        # Project documentation
+├── app.py                     # Streamlit Web Application
+├── student_data.csv           # Dataset
+├── student_performance.ipynb  # Model Training Notebook
+├── model.pkl                  # Trained ML Model
+├── requirements.txt           # Dependencies
+├── demo_video.mp4             # Project Demo Video
+└── README.md                  # Project Documentation
 ```
 
 ---
 
-## 🚀 Future Improvements
+# ⚙️ Installation & Setup
 
-Possible improvements for the project:
+### Clone the repository
 
-* Implement **Deep Learning models (Neural Networks)**
-* Use a **larger healthcare dataset**
-* Build a **web application using Flask or Streamlit**
-* Deploy the model on **cloud platforms**
-* Develop a **real-time heart disease risk prediction system**
+```
+git clone https://github.com/your-username/student-performance-prediction.git
+```
+
+### Navigate to project directory
+
+```
+cd student-performance-prediction
+```
+
+### Install required libraries
+
+```
+pip install -r requirements.txt
+```
+
+### Run the application
+
+```
+streamlit run app.py
+```
+
+---
+
+# 📈 Model Prediction Logic
+
+The model predicts the final grade based on patterns learned from historical student performance data.
+
+Previous grades (**G1 and G2**) have the **strongest correlation with final grade (G3)**, making them key predictors in the model.
+
+---
+
+# 🌟 Key Features
+
+✔ Interactive Streamlit Web Interface  
+✔ Real-time Grade Prediction  
+✔ Machine Learning Model Integration  
+✔ Clean and User-Friendly UI  
+✔ Deployable ML Application  
+
+---
+
+# 📚 Dataset
+
+The project uses the **Student Performance Dataset**, which contains academic and behavioral attributes of students used to predict final grades.
+
+---
+
+# 👩‍💻 Author
+
+**Leetika**
+
+Aspiring **Data Scientist | Machine Learning Enthusiast**
+
+---
